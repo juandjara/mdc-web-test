@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import '../node_modules/material-components-web/dist/material-components-web.min.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;    
+}
+
+#root {
+  --mdc-theme-primary: #16a085;
+  --mdc-theme-accent: #f39c12;
+}
+
+.app {
+  display: flex;
+}
+.app-content {
+  flex: 1;
+}
+
+.list-item-link {
+  margin-right: 16px;
+  display: inline-block;
+  color: inherit;
+}
