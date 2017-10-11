@@ -1,13 +1,15 @@
-[class^="tooltip-"] {
+[class^="tooltip--"] {
   position: relative;
 }
-[class^="tooltip-"]:after {
+[class^="tooltip--"]:after {
   font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
   opacity: 0;
   visibility: hidden;
   position: absolute;
   content: attr(data-tooltip);
-  padding: 3px 10px;
+  padding: 4px 10px;
   top: 30px;
   left: 50%;
   transform: translateX(-50%) translateY(-2px);
@@ -18,9 +20,27 @@
   border-radius: 2px;
   transition: opacity 0.2s cubic-bezier(.64,.09,.08,1), transform 0.2s cubic-bezier(.64,.09,.08,1);
 }
-[class^="tooltip-"]:hover:after {
+[class^="tooltip--"]:hover:after {
   display: block;
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
+}
+
+.tooltip--left:after {
+  top: -4px;
+  left: 0;
+  transform: translateX(-112%) translateY(0);
+}
+.tooltip--left:hover:after {
+  transform: translateX(-110%) translateY(0);
+}
+
+.tooltip--right:after {
+  top: -4px;
+  left: 100%;
+  transform: translateX(12%) translateY(0);
+}
+.tooltip--right:hover:after {
+  transform: translateX(10%) translateY(0);
 }

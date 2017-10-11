@@ -87,17 +87,22 @@ class App extends Component {
                     <span style={{flex: 1}}>Proyecto 1</span>
                     <TooltipLink href="/projects/id/tasks" 
                        className="list-item-link"
-                       tooltip="Tareas">
+                       tooltip="Tareas"
+                       direction="left">
                       <span className="material-icons">timer</span>
                     </TooltipLink>
-                    <a href="/project/id/edit"  
-                      className="list-item-link">
+                    <TooltipLink href="/project/id/edit"  
+                      className="list-item-link"
+                      tooltip="Editar"
+                      direction="left">
                       <span className="material-icons">edit</span>
-                    </a>                
-                    <a href="/project/id/users" 
-                      className="list-item-link">
+                    </TooltipLink>
+                    <TooltipLink href="/project/id/users" 
+                      className="list-item-link"
+                      tooltip="Usuarios"
+                      direction="left">
                       <span className="material-icons">person</span>
-                    </a>
+                    </TooltipLink>
                   </ListItem>,
                   <ListDivider key="divider" inset />
                 ]
