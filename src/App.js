@@ -14,8 +14,11 @@ import {
   ListItem
 } from 'react-mdc-web'
 import mqr from 'mqr'
+import Tooltip from './components/shared/Tooltip'
 
 const mediaQuery = mqr()
+
+const TooltipLink = Tooltip("a")
 
 class App extends Component {
   state = {
@@ -82,10 +85,11 @@ class App extends Component {
                   <ListItem key="item">
                     <Icon name="work" />
                     <span style={{flex: 1}}>Proyecto 1</span>
-                    <a href="/projects/id/tasks" 
-                      className="list-item-link">
+                    <TooltipLink href="/projects/id/tasks" 
+                       className="list-item-link"
+                       tooltip="Tareas">
                       <span className="material-icons">timer</span>
-                    </a>
+                    </TooltipLink>
                     <a href="/project/id/edit"  
                       className="list-item-link">
                       <span className="material-icons">edit</span>
