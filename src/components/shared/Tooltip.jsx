@@ -1,4 +1,5 @@
 import React from 'react'
+import './Tooltip.css'
 
 // Tooltip HOC from css in https://codepen.io/juandjara/pen/rGKwjq
 const Tooltip = WrappedComponent => props => {
